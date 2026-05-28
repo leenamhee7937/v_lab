@@ -17,7 +17,7 @@ if os.path.exists(html_path):
     # 가상 가상 실험실 콘텐츠 높이에 맞춰 height를 850으로 설정
     components.html(html_content, height=850, scrolling=True)
 else:
-    # 만약 배포 환경에서 파일을 여전히 못 찾을 경우, 디버깅 메시지를 화면에 표시
+    # 만약 배포 환경에서 파일을 여전히 못 찾을 경우, 디버깅 메시지를 화면에 표시함
     st.error("⚠️ 'index.html' 파일을 찾을 수 없습니다.")
     st.info(f"현재 시스템이 탐색 중인 경로: {html_path}")
     st.info(f"현재 폴더 내에 존재하는 파일 목록: {os.listdir(current_dir)}")
