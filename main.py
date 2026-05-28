@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")
 
 # 2. 같은 경로에 있는 index.html 파일 읽기
 try:
-    with open("index.html", "r", encoding="utf-8") as f:
+    with open("index.htm", "r", encoding="utf-8") as f:
         html_content = f.read()
         
     # 3. HTML 콘텐츠를 Streamlit 컴포넌트 웹 화면에 삽입
